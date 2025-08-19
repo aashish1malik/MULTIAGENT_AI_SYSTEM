@@ -40,8 +40,8 @@ project/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/job-screening-system.git
-   cd job-screening-system
+   git clone rep
+   
    ```
 
 2. Create a virtual environment:
@@ -76,20 +76,7 @@ Run the Streamlit UI:
 streamlit run app.py
 ```
 
-Advanced usage with options:
-
-```bash
-python main.py --jd-file path/to/jds.csv --resumes-dir path/to/resumes --threshold 85 --send-emails
-```
-
-### Command Line Arguments
-
-- `--jd-file`: Path to job descriptions CSV file (default: job_description.csv)
-- `--resumes-dir`: Directory containing resume PDFs (default: resumes)
-- `--db-file`: SQLite database file path (default: memory.db)
-- `--threshold`: Minimum score threshold for shortlisting (default: 80.0)
-- `--send-emails`: Send interview invitation emails (default: false)
-- `--diagram-type`: Type of agent interaction diagram to generate (choices: mermaid, matplotlib; default: mermaid)
+d)
 
 ## 🖥️ Streamlit UI
 
@@ -153,14 +140,14 @@ streamlit run app.py
 ## 📋 Requirements
 
 ```
-pymupdf==1.22.5
-numpy==1.26.1
-scikit-learn==1.3.1
-matplotlib==3.8.0
-networkx==3.2.1
-ollama==0.4.7
-streamlit==1.27.2
-pandas==2.1.1
+numpy>=2.0.0
+scikit-learn>=1.6.0
+matplotlib>=3.8.0
+pandas>=2.1.1
+networkx>=3.2.1
+ollama>=0.4.7
+streamlit>=1.27.2
+pymupdf>=1.23.22
 ```
 
 ## 📊 Agent Interaction Diagram
@@ -176,10 +163,3 @@ graph TD
     class A,B,C,D,E agent;
 ```
 
-## 📄 License
-
-MIT License
-
-## ✨ Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. 
